@@ -26,6 +26,7 @@ ul {
   width: 150px;
   height: 150px;
   border-radius: 50%;
+  box-shadow: 0 0 0 2px white;
 }
 
 .name {
@@ -114,7 +115,7 @@ h4 {
 
 @media only screen and (max-width: 768px) { 
   body { 
-    font-size: 14px; 
+   font-size: 14px; 
   } 
 
   .header { 
@@ -131,11 +132,11 @@ h4 {
   } 
 
   .name { 
-    font-size: 24px;
+   font-size: 24px;
   } 
 
   .contact-info { 
-    font-size: 14px; 
+   font-size: 14px; 
   } 
 
   .section { 
@@ -149,8 +150,8 @@ h4 {
   }
 
   .section-title, .section-list {
-      padding: 10px 20px;
-      font-size: 16px;
+    padding: 10px 20px;
+    font-size: 16px;
     }
   
   h2 {
