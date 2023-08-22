@@ -1,221 +1,193 @@
-/* Global styles */
 body {
- font-family: Roboto, Arial, sans-serif;
- font-size: 16px;
- line-height: 1.5;
- color: #0c065b;
- text-align: center;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #19107d;
+  text-align: center;
 }
 
 a {
- color: #23068f;
- text-decoration: none;
-}
-
-a:hover {
- color: #0d1115;
- text-decoration: underline;
+  color: #23068f;
+  text-decoration-color: rgb(192, 187, 245);
 }
 
 ul {
- margin: 0;
- padding: 0;
- list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-/* Header styles */
 .header {
- padding: 20px 0;
- background-color: #c2dcf1;
+  padding: 20px 0;
+  background-color: #c2dcf1;
 }
 
 .avatar {
- width: 150px;
- height: 150px;
- border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
 
 .name {
- margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .contact-info {
- margin-top: 0;
- margin-bottom: 1cm;
- background-color: #d2e5f5;
+  margin-top: 0;
+  margin-bottom: 2px;
+  background-color: #d2e5f5;
+  margin-block-start: 24px;
+  margin-bottom: 10px;
+  padding: 10px 50px;
+  border-radius: 10px;
+  font-size: 18px; 
 }
 
-/* Section styles */
 .section {
-    margin-bottom: 30px;
-    margin-top: 20px;
-  }
-  
-  .section-title {
-    font-size: 14pt;
-    font-weight: normal;
-    font-style: oblique;
-    background-color: #f3f3f4;
-  }
-  
-  /* Styles for headings */
-  h2 {
-    font-size: 2.5rem;
-    font-weight: normal;
-    margin-bottom: 20px;
-  }
-  
-  h3 {
-    font-size: 2rem;
-    font-weight: normal;
-    margin-bottom: 15px;
-  }
-  
-  h4 {
-    font-size: 1.5rem;
-    font-weight: normal;
-    margin-bottom: 10px;
-  }
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-title {
+  font-weight: initial;
+  font-style: oblique;
+  background-color:  #d2e5f5;
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px 50px;
+  border-radius: 10px;
+  font-size: 18px; 
+}
+
+.section-list {
+  color: #300363;
+  font-weight: initial;
+  margin: 10px 0;
+  padding: 10px 50px;
+  font-size: 18px; 
+  text-align: center; 
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
 
 .date {
- margin-top: 5px;
- margin-bottom: 20px;
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 
-/* Skill list styles */
 .skill-list li {
- display: inline-block;
- margin-right: 10px;
- margin-bottom: 10px;
- padding: 5px 10px;
- background-color: #f3f3f4;
- border-radius: 10px;
- font-weight: bold;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  background-color: #f3f3f4;
+  border-radius: 10px;
 }
 
-/* Footer styles */
 .footer {
- padding: 20px 0;
- color: #17171d;
- background-color: #c2dcf1;
- text-align: center;
+  padding: 20px 20px;
+  color: #17171d;
+  background-color: #6e7275; 
+  text-align: left; 
+  margin-top: 50px;
+  background-color: #f2f2f2;
 }
 
-.scroll-top {
- position: fixed;
- bottom: 20px;
- right: 20px;
- z-index: 9999;
- display: none;
- background-color: #19191a;
- color: #d8d7e0;
- padding: 10px 15px;
- border-radius: 50%;
-}
-
-.scroll-top i {
- font-size: 24px;
-}
-
-#btn-theme {
-    background-image: url('assets/img/button.png');
+@media only screen and (max-width: 768px) { 
+  body { 
+    font-size: 14px; 
   } 
 
-@media only screen and (max-width: 768px) {
- body {
-  font-size: 14px;
- }
- .header {
-  padding: 10px 0;
-  text-align: center;
- }
- .avatar {
-  width: 100px;
-  height: 100px;
-  margin-bottom: 10px;
-  border-radius: 50%;
- }
- .name {
-  font-size: 24px;
- }
- .contact-info {
-  font-size: 14px;
- }
- .section {
-    margin-bottom: 30px;
-  }
-  
+  .header { 
+    padding: 10px 0; 
+    text-align: center; 
+  } 
+
+  .avatar { 
+    width: 100px; 
+    height: 100px; 
+    margin-bottom: 10px; 
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px white;
+  } 
+
+  .name { 
+    font-size: 24px;
+  } 
+
+  .contact-info { 
+    font-size: 14px; 
+  } 
+
+  .section { 
+    margin-bottom: 30px; 
+  } 
+
   .section-title {
-    font-size: 1.5rem;
-    font-weight: light;
+    font-size: 18px;
     margin-bottom: 20px;
+    margin-left: 10px;
   }
+
+  .section-title, .section-list {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
   
-  /* Styles for headings */
   h2 {
-    font-size: 2rem;
+    font-size: 32px;
     font-weight: bold;
     margin-bottom: 15px;
   }
-  
+
   h3 {
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
   }
-  
+
   h4 {
-    font-size: 1.2rem;
+    font-size: 18px;
     font-weight: bold;
     margin-bottom: 5px;
   }
 
- .date {
-  font-size: 14px;
-  margin-top: 5px;
-  margin-bottom: 10px;
- }
- 
- .job-title {
-  font-size: 18px;
-  margin-bottom: 5px;
- }
-
- .skill-list li {
-  font-size: 14px;
-  padding: 3px 8px;
-  margin-right: 5px;
-  margin-bottom: 5px;
-  border-radius: 15px;
- }
- .footer {
-  padding: 10px 0;
-  text-align: center;
- }
-}
-
-.dark-mode {
- background-color: #222;
- color: #fff;
-}
-
-.dark-mode a {
- color: #007bff;
-}
-
-.dark-mode a:hover {
- color: #0056b3;
-}
-
-.dark-mode .skill-list li {
- background-color: #444;
-}
-
-.dark-mode .scroll-top {
- background-color: #fff;
- color: #333;
-}
-
-#btn-theme {
-    background-image: url('assets/img/button.png');
+  .date { 
+    font-size: 16px; 
+    margin-top: 5px; 
+    margin-bottom: 10px; 
   } 
+
+  .skill-list li { 
+    font-size: 16px; 
+    padding: 3px 8px; 
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 15px; 
+  } 
+
+  .footer { 
+    padding: 10px 10px; 
+    text-align: left; 
+  } 
+}
+
