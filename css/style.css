@@ -48,7 +48,6 @@ ul {
   margin: 50px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 
@@ -140,7 +139,7 @@ h4 {
   } 
 
   .section { 
-    margin-bottom: 30px; 
+    margin-bottom: 20px; 
   } 
 
   .section-title {
